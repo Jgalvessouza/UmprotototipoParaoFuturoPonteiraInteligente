@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ponteira Inteligente para Bengala</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- TOPO -->
+    <header class="topbar">
+        <div class="container">
+            <h1>PONTEIRA INTELIGENTE PARA BENGALA</h1>
+            <p class="subtitle">
+                <code>Sensor Ultrassônico        •  Vibração , Buzzer        • Segurança</code>
+            </p>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container">
+
+        <!-- CARROSSEL -->
+        <section class="carousel">
+
+            <button id="fullscreen-toggle" title="Tela cheia">⛶</button>
+
+            <div class="slides">
+
+                <!-- SLIDE 1 -->
+
+                <article class="slide" aria-hidden="false">
+
+                    <h2>Projeto Ponteira Inteligente</h2>
+
+                    <img src="img/imag_01.png" alt="Ponteira Inteligente">
+
+                    <p>
+                        Este projeto foi desenvolvido com o objetivo de auxiliar pessoas com
+                        deficiência visual, oferecendo mais segurança e autonomia durante
+                        a locomoção. O sistema é capaz de detectar buracos, obstáculos e
+                        irregularidades no solo, reduzindo riscos de acidentes e melhorando
+                        a orientação do usuário em diferentes ambientes.
+                    </p>
+
+                    <p>
+                        A solução utiliza o <strong>microcontrolador Espressif Systems ESP32</strong> integrado
+                        ao <strong>sensor ultrassônico HC-SR04</strong>, <strong>motores vibratórios e buzzer</strong>,
+                        responsáveis pela emissão de alertas sonoros e táteis em tempo real.
+                        Dessa forma, o dispositivo combina tecnologia, acessibilidade e inovação
+                        para contribuir com a inclusão social e a mobilidade inteligente.
+                    </p>
+                </article>
+
+                <!-- SLIDE 2 -->
+                <article class="slide" aria-hidden="true">
+
+                    <h2>Introdução</h2>
+
+                    <img src="img/intr.png" alt="Ponteira Inteligente">
+
+                    <p>
+                        A mobilidade de pessoas com deficiência visual ainda enfrenta desafios relacionados
+                        à segurança e acessibilidade. Buracos, obstáculos e irregularidades nas calçadas
+                        podem causar acidentes e dificultar a locomoção. Pensando nisso, este projeto propõe
+                        uma ponteira inteligente para bengala utilizando Espressif Systems ESP32, sensor ultrassônico,
+                        motores vibratórios e buzzer. O sistema detecta obstáculos e irregularidades
+                        no solo em tempo real, emitindo alertas sonoros e vibratórios
+                        para aumentar a segurança, autonomia e inclusão social do usuário.
+                    </p>
+
+                    <p>
+                        A proposta do projeto Foi desenvolver uma ponteira inteligente capaz
+                        de detectar essas irregularidades e informar o usuário em tempo real.
+                    </p>
+                </article>
+
+                <!-- SLIDE 3 -->
+                <article class="slide" aria-hidden="true">
+
+                    <h2>Justificativa</h2>
+
+                    <img src="img/just.png" alt="Ponteira Inteligente">
+
+                    <p>
+                        Muitas tecnologias assistivas disponíveis atualmente possuem alto custo
+                        e funcionalidades limitadas, realizando apenas a detecção simples de obstáculos.
+                        Diante disso, a ponteira inteligente foi desenvolvida como uma solução acessível
+                        e de baixo custo, capaz de identificar obstáculos, desníveis e irregularidades
+                        no solo, oferecendo maior segurança e autonomia para pessoas com deficiência visual.
+                    </p>
+
+                    <p>
+                        Além da importância social, o projeto também possui relevância acadêmica
+                        por envolver conceitos de sistemas embarcados, sensores eletrônicos,
+                        programação de microcontroladores e integração entre hardware e software.
+                        A utilização do Espressif Systems ESP32 e do sensor ultrassônico HC-SR04
+                        permite criar um sistema eficiente, contribuindo para a aplicação prática
+                        da tecnologia na acessibilidade e inclusão social.
+                    </p>
+                </article>
+
+                <!-- SLIDE 4 -->
+                <article class="slide" aria-hidden="true">
+
+                    <h2>Problema</h2>
+
+                    <img src="img/proble.png" alt="Ponteira Inteligente">
+                    <p>
+                        A mobilidade de pessoas com deficiência visual ainda enfrenta dificuldades
+                        causadas pela falta de acessibilidade nas vias públicas. Buracos, desníveis
+                        e irregularidades nas calçadas representam riscos constantes,
+                        podendo provocar acidentes e comprometer a segurança durante a locomoção.
+                    </p>
+
+                    <p>
+                        Embora a bengala tradicional seja um importante recurso de apoio, ela possui
+                        limitações na detecção antecipada de obstáculos mais profundos. Diante disso,
+                        surge a necessidade de desenvolver uma solução tecnológica acessível capaz de identificar
+                        irregularidades no solo e fornecer alertas eficientes,
+                        aumentando a autonomia e a segurança do usuário.
+                    </p>
+                </article>
+
+                <!-- SLIDE 5 -->
+                <article class="slide" aria-hidden="true">
+
+                    <h2>Objetivo Geral</h2>
+
+                    <img src="img/objt.png" alt="Ponteira Inteligente">
+                    <p>
+                        O objetivo geral deste projeto é desenvolver uma ponteira inteligente
+                        para bengala capaz de detectar obstáculos e irregularidades no solo,
+                        proporcionando maior segurança e autonomia para pessoas com deficiência visual.
+                        O sistema utiliza alertas vibratórios
+                        e sonoros para auxiliar o usuário durante a locomoção.
+                    </p>
+
+                    <p>
+                        Além disso, o projeto busca criar uma solução acessível e funcional,
+                        unindo tecnologia e inclusão social por meio da utilização
+                        de sensores e sistemas embarcados aplicados à mobilidade assistiva..
+                    </p>
+                </article>
+
+                <!-- SLIDE 6 -->
+                <article class="slide" aria-hidden="true">
+
+                    <h2>Objetivos Específicos</h2>
+
+                    <img src="img/objEs.png" alt="Fluxograma do Sistema">
+
+                    <p>
+                        Entre os objetivos específicos, destaca-se a utilização do sensor ultrassônico
+                        para detectar obstáculos e irregularidades no ambiente, enquanto o
+                        Espressif Systems ESP32 realiza o processamento dos dados em tempo
+                        real e a classificação dos níveis de risco encontrados.
+                    </p>
+
+                    <p>
+                        O sistema também tem como finalidade acionar motores vibratórios e alertas
+                        sonoros conforme o perigo detectado, além de demonstrar na
+                        prática conceitos de sistemas embarcados, programação e integração
+                        entre hardware e software em uma solução tecnológica assistiva.
+                    </p>
+
+                </article>
+
+                <!-- SLIDE 7 -->
+                <article class="slide" aria-hidden="true">
+
+                    <h2>Arquitetura do Sistema</h2>
+
+                    <img src="img/fluxu.png" alt="Fluxograma do Sistema">
+
+                    <p>
+                        A arquitetura da ponteira inteligente foi desenvolvida com base na
+                        estrutura computacional de entrada, processamento, memória e saída.
+                        O sistema utiliza o sensor ultrassônico HC-SR04 para capturar
+                        informações do ambiente, realizando a medição contínua da distância
+                        entre a bengala e o solo. Esses dados são enviados para o Espressif
+                        Systems ESP32, responsável pelo processamento das informações e pela
+                        classificação dos níveis de risco detectados.
+                    </p>
+
+                    <p>
+                        <strong>Entrada → Processamento → Saída</strong><br>
+                        Após o processamento, o sistema aciona os dispositivos de saída,
+                        como motores vibratórios e buzzer, emitindo alertas táteis e sonoros
+                        conforme o nível de perigo identificado. Dessa forma, a ponteira inteligente
+                        consegue fornecer respostas rápidas em tempo real, aumentando a segurança,
+                        acessibilidade e autonomia de pessoas com deficiência visual durante a locomoção.
+                    </p>
+
+                    <p>
+                        Entrada: Sensor HC-SR04<br>
+                        Processamento: ESP32<br>
+                        Saída: Vibração e buzzer
+                    </p>
+                </article>
+
+                <!-- SLIDE 8 -->
+                <article class="slide" aria-hidden="true">
+
+                    <h2>Classificação de Perigo</h2>
+
+                    <img src="img/pedig.png" alt="Classificação de perigo do sistema">
+
+                    <div class="risco seguro">
+                        <h3>🟢 Seguro (0 – 15 cm)</h3>
+                        <p>
+                            Superfície considerada estável e sem riscos imediatos.
+                            O sistema permanece sem emitir alertas.
+                        </p>
+                    </div>
+
+                    <div class="risco atencao">
+                        <h3>🟡 Atenção (16 – 30 cm)</h3>
+                        <p>
+                            Pequenas irregularidades detectadas.
+                            O usuário recebe vibração leve para manter atenção.
+                        </p>
+                    </div>
+
+                    <div class="risco medio">
+                        <h3>🟠 Perigo Médio (31 – 50 cm)</h3>
+                        <p>
+                            Presença de desníveis ou obstáculos moderados.
+                            O sistema ativa vibração média e alertas sonoros.
+                        </p>
+                    </div>
+
+                    <div class="risco alto">
+                        <h3>🔴 Perigo Alto (Acima de 50 cm)</h3>
+                        <p>
+                            Alto risco de queda ou acidente.
+                            O sistema emite vibração forte e múltiplos bipes de alerta.
+                        </p>
+                    </div>
+
+                    <p class="info-final">
+                        A intensidade dos alertas aumenta conforme a profundidade e o nível de risco detectado.
+                    </p>
+                </article>
+
+                <!-- SLIDE 9 -->
+                <article class="slide" aria-hidden="true">
+
+                    <h2>Resultados Esperados</h2>
+
+                    <img src="img/resulti.png" alt="Fluxograma do Sistema">
+
+                    <p>
+                        Espera-se que a ponteira inteligente proporcione
+                        maior segurança e autonomia para pessoas com deficiência
+                        visual durante a locomoção. Com a utilização do sensor ultrassônico
+                        e do Espressif Systems ESP32, o sistema deverá identificar obstáculos,
+                        buracos e irregularidades no solo em tempo real, emitindo alertas sonoros
+                        e vibratórios de acordo com o nível de risco detectado.
+                    </p>
+
+                    <p>
+                        Além disso, o projeto busca demonstrar a eficiência da integração
+                        entre hardware e software em uma solução assistiva de baixo custo.
+                        Espera-se também contribuir para a acessibilidade e inclusão social,
+                        oferecendo um dispositivo funcional, acessível e capaz de auxiliar na
+                        prevenção de acidentes durante o deslocamento do usuário.
+                    </p>
+                </article>
+
+                <!-- SLIDE 10 -->
+                <article class="slide" aria-hidden="true">
+
+                    <h2>Implementação Oculos </h2>
+
+                    <img src="img/oculs_2.png" alt="Fluxograma do Sistema">
+
+                    <p>
+                        O Óculos Inteligente MK1 foi desenvolvido como um sistema complementar
+                        à Ponteira Inteligente, com o objetivo de ampliar a percepção espacial do
+                        usuário e aumentar a segurança durante a locomoção. O dispositivo utiliza
+                        sensores ultrassônicos instalados na estrutura do óculos para detectar obstáculos
+                        frontais e elevados que normalmente não seriam identificados pela bengala tradicional
+                        . As informações capturadas são processadas por um Arduino Nano, responsável por interpretar
+                        a distância dos objetos e acionar alertas sonoros em diferentes níveis de atenção, transmitidos
+                        por uma saída de áudio integrada ou por fones de ouvido.
+                    </p>
+
+                    <p>
+                        A estrutura do protótipo foi projetada de forma compacta,
+                        portátil e modular, utilizando componentes como Arduino Nano,
+                        leitor de cartão SD, entrada USB Tipo A, saída de som integrada
+                        e conector P2 para áudio. O sistema funciona através da captura de
+                        dados do ambiente, processamento das informações e emissão de alertas
+                        sonoros conforme a proximidade dos obstáculos. Futuramente, o projeto prevê
+                        a integração de câmeras inteligentes e Inteligência Artificial do DVKit,
+                        permitindo reconhecimento avançado do ambiente urbano, identificação de
+                        riscos em tempo real e navegação assistida para pessoas com deficiência visual.
+                    </p>
+                </article>
+
+
+                <!-- SLIDE 11 -->
+                <article class="slide" aria-hidden="true">
+
+                    <h2>Implenetação Futura KIt com Raspberry pi + IA </h2>
+
+                    <img src="img/imple.png" alt="Fluxograma do Sistema">
+                    <p>
+                        A principal evolução prevista para o projeto consiste na
+                        substituição dos sensores ultrassônicos básicos por um sistema
+                        de câmeras inteligentes integradas ao ecossistema do DVKit.
+                    </p>
+
+                    <p>
+                        Neste novo modelo, as câmeras instaladas no óculos capturam imagens
+                        do ambiente em tempo real e enviam para um Raspberry Pi. O sistema
+                        utiliza Inteligência Artificial com OpenCV para identificar obstáculos,
+                        buracos e degraus, emitindo alertas sonoros, comandos de voz e vibrações
+                        para auxiliar a locomoção segura do usuário.
+                    </p>
+                </article>
+
+
+                <!-- SLIDE 12-->
+                <article class="slide" aria-hidden="true">
+                    <h2>Conclusão</h2>
+                    <img src="img/conclu.png" alt="Fluxograma do Sistema">
+                    <p>
+                        A Ponteira Inteligente para Bengala foi desenvolvida para auxiliar
+                        pessoas com deficiência visual, utilizando sensores ultrassônicos,
+                        ESP32, vibração e alertas sonoros para detectar obstáculos e irregularidades
+                        no solo. O sistema processa as informações em tempo real e alerta o usuário
+                        conforme o nível de risco, oferecendo mais segurança e autonomia durante a locomoção.
+
+                    <p>
+                        O sistema foi estruturado em etapas de entrada, processamento,
+                        memória e saída, permitindo o monitoramento contínuo do ambiente e
+                        respostas rápidas diante de possíveis perigos. Além da funcionalidade atual,
+                        o projeto apresenta potencial de expansão futura com integração de GPS,
+                        Inteligência Artificial, aplicativos móveis e reconhecimento inteligente de obstáculos.
+                        Dessa forma, a ponteira inteligente representa não apenas um protótipo acadêmico,
+                        mas também uma proposta tecnológica com impacto social relevante, contribuindo
+                        para acessibilidade, inclusão e melhoria da qualidade de
+                        ida de pessoas com deficiência visual.
+                    </p>
+                </article>
+
+            </div>
+
+            <!-- BOTÕES -->
+            <button class="nav prev">&#10094;</button>
+            <button class="nav next">&#10095;</button>
+
+            <!-- DOTS -->
+            <div class="dots" id="dots"></div>
+
+        </section>
+
+        <!-- SIDEBAR -->
+        <aside class="card">
+
+            <img src="img/cardd.png" alt="Ponteira Inteligente">
+
+
+        </aside>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="topbar">
+        <div class="container">
+            <small>
+                Projeto Acadêmico • Ponteira Inteligente para Bengala • © 2026 JG 
+            </small>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
