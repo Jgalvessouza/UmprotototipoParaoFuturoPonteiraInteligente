@@ -152,7 +152,23 @@ body {
         transform: translateX(-50%) translateY(0px);
     }
 }
+@media (max-width: 480px) {
 
+    .dropdown-menu {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 300px;
+        top: 105%;
+    }
+    .menu-btn {
+    
+       top: 105%;
+       right:23%;
+    
+    }
+}
 .subtitle {
     opacity: 0.95;
     margin: 0
