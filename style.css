@@ -1,13 +1,18 @@
 :root {
-    --bg: linear-gradient(180deg, #080808, #041038); /* Fundo dark mode, baseado no body */
-    --card: #ffffff; /* Fundo dos cards e carrossel */
-    --accent: #82bfee; /* Ciano Neon (Acento Principal) */
+    --bg: linear-gradient(180deg, #080808, #041038);
+    /* Fundo dark mode, baseado no body */
+    --card: #ffffff;
+    /* Fundo dos cards e carrossel */
+    --accent: #82bfee;
+    /* Ciano Neon (Acento Principal) */
     --muted: #f6f6f7;
     --radius: 12px;
     --container: 1100px;
     --container_h: 800px;
-    --text-primary: #f0f0f0; /* Cor do texto no dark mode */
-    --text-code: #f6fafa; /* Cor de destaque (Laranja/Coral) */
+    --text-primary: #f0f0f0;
+    /* Cor do texto no dark mode */
+    --text-code: #f6fafa;
+    /* Cor de destaque (Laranja/Coral) */
     --shadow: 0 6px 18px rgba(8, 18, 51, 0.06);
 }
 
@@ -33,13 +38,17 @@ body {
 
 /* Estilo Topbar (com Imagem de Fundo e Sombra Neon) */
 .topbar {
+
+    position: relative;
     background-image: url('img/readr.png');
-    background-size: 100% 100%; /* força ocupar todo espaço */
+    background-size: 100% 100%;
+    /* força ocupar todo espaço */
     background-repeat: no-repeat;
     background-position: center;
 
     width: 100%;
-    height: 285px; /* altura do reader */
+    height: 285px;
+    /* altura do reader */
 
     color: var(--accent);
     padding: 0;
@@ -47,16 +56,103 @@ body {
     text-align: center;
     box-shadow: 0px 3px 10px 1px var(--accent);
 }
+
 .topbar h1 {
-    padding-left: 40%;
-    color: var(--text-code); /* Subtítulo em coral */
+    padding-top: 8%;
+    color: var(--text-code);
+    /* Subtítulo em coral */
 }
 
 .topbar p {
-    padding-left: 37%;
-    padding-top: 8%;
-    color: var(--text-code); /* Subtítulo em coral */
+    
+    color: var(--text-code);
+    /* Subtítulo em coral */
 }
+
+
+.subtitle code {
+    color: white;
+    font-size: 15px;
+}
+
+/* BOTÃO MENU */
+
+.menu-btn {
+    position: absolute;
+    top: 80%;
+    right:10%;
+    background: #041038;
+    color: #ecebeb;
+    border: none;
+    box-shadow: 0px 0px 20px #82bfee;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.menu-btn:hover {
+    transform: scale(1.05);
+}
+
+/* MENU SUSPENSO */
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 105%;
+    right: 10%;
+    transform: translateX(-50%);
+    width: 320px;
+    background: linear-gradient(180deg, #080808, #041038);
+    border: 2px solid #041038;
+    border-radius: 15px;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0px 0px 20px #82bfee;
+    animation: aparecer 0.3s ease;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+.menu-section {
+    margin-bottom: 15px;
+}
+
+.menu-section h3 {
+    color: #e7e9ee;
+    margin-bottom: 8px;
+}
+
+.menu-section p,
+.menu-section li {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.menu-section ul {
+    padding-left: 18px;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0px);
+    }
+}
+
 .subtitle {
     opacity: 0.95;
     margin: 0
@@ -65,14 +161,14 @@ body {
 /* --- SEÇÃO PRINCIPAL (MAIN) CORRIGIDA --- */
 main.container {
     /* Aumenta a largura máxima para 1400px, conforme solicitado antes */
-    max-width: 1400px; 
+    max-width: 1400px;
     margin: 20px auto;
     padding: 20px;
     display: grid;
-    
+
     /* CORREÇÃO: Manteve o layout de duas colunas (carrossel + sidebar) */
     grid-template-columns: 2fr 1fr;
-    
+
     /* Configurações de espaçamento final */
     gap: 18px;
     margin-bottom: 48px;
@@ -88,12 +184,14 @@ main.container {
 
 /* --- CARD (Sidebar) --- */
 .card {
-    
-    color: var(--accent); /* Títulos do card em neon */
+
+    color: var(--accent);
+    /* Títulos do card em neon */
     background: var(--card);
     padding: 16px;
     border-radius: 10px;
-    box-shadow: 0px 3px 10px 1px var(--accent); /* Sombra neon */
+    box-shadow: 0px 3px 10px 1px var(--accent);
+    /* Sombra neon */
 }
 
 /* Links do Card (Tópicos de Aprofundamento) */
@@ -104,23 +202,28 @@ main.container {
     border-radius: 10px;
     display: block;
 }
-.card li a  {
-    color: var(--text-code); /* Links em coral */
+
+.card li a {
+    color: var(--text-code);
+    /* Links em coral */
     text-decoration: none;
     font-size: large;
     font-family: Consolas, "Courier New", monospace;
 }
-.card strong{
+
+.card strong {
     color: #9e019e;
 }
+
 /* --- CARROSSEL CORRIGIDO --- */
 .carousel {
     font-size: large;
     font-family: Consolas, "Courier New", monospace;
     position: relative;
     background: linear-gradient(180deg, #000000, #000f3d);
-    box-shadow: 0px 3px 10px 1px var(--accent); /* Sombra neon */
-    
+    box-shadow: 0px 3px 10px 1px var(--accent);
+    /* Sombra neon */
+
     /* Propriedades de layout do PARENT (main.container) foram removidas daqui:
        max-height: 1900px;, margin: 20px auto;, grid-template-columns: 1fr;, gap: 20px;
        O carrossel agora usa a largura 100% da sua célula (2fr) do grid.
@@ -158,7 +261,7 @@ main.container {
     box-shadow: none !important;
     z-index: 9999;
     overflow-y: auto;
-    
+
 }
 
 .carousel.fullscreen .slide img {
@@ -166,12 +269,12 @@ main.container {
     max-height: 50vh;
     width: auto !important;
     border-radius: 20px;
-    box-shadow:0px 0px 20px 5px #27dbd8;
+    box-shadow: 0px 0px 20px 5px #27dbd8;
 }
 
 .carousel.fullscreen #fullscreen-toggle::before {
     content: '\26F7';
-    
+
 }
 
 /* --- Slides e Conteúdo --- */
@@ -192,16 +295,20 @@ main.container {
 
 .slide h2 {
     margin-top: 0;
-    color: var(--accent) /* Títulos em neon */
+    color: var(--accent)
+        /* Títulos em neon */
 }
 
 .slide p {
-    color: var(--text-code); /* Conteúdo em coral */
+    color: var(--text-code);
+    /* Conteúdo em coral */
     line-height: 1.5
 }
-.slide strong{
+
+.slide strong {
     color: #6a9955;
 }
+
 .slide img {
     width: 380px;
     height: auto;
@@ -265,9 +372,11 @@ footer.topbar {
 
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* joga para baixo */
+    align-items: flex-end;
+    /* joga para baixo */
 
-    min-height: 120px; /* altura do footer */
+    min-height: 120px;
+    /* altura do footer */
     text-align: center;
 }
 
@@ -275,13 +384,14 @@ footer.topbar small {
     display: block;
     width: 100%;
 }
+
 /*---Riscis---*/
 .risco {
     margin: 20px 0;
     padding: 18px;
     border-radius: 14px;
     color: #fff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 }
 
@@ -327,7 +437,7 @@ footer.topbar small {
 .info-final {
     margin-top: 25px;
     padding: 15px;
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
     border-left: 5px solid #00e5ff;
     border-radius: 10px;
     font-size: 16px;
