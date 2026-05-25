@@ -55,6 +55,26 @@ document.addEventListener('keydown', e => {
         toggleFullscreen();
     }
 });
+// menu suspenso informaçoes 
+const menuBtn = document.getElementById("menuBtn");
+const dropdownMenu = document.getElementById("dropdownMenu");
+
+menuBtn.addEventListener("click", () => {
+    dropdownMenu.classList.toggle("active");
+});
+
+/* Fecha ao clicar fora */
+
+window.addEventListener("click", (e) => {
+
+    if (
+        !menuBtn.contains(e.target) &&
+        !dropdownMenu.contains(e.target)
+    ) {
+        dropdownMenu.classList.remove("active");
+    }
+
+});
 
 // Inicia o carrossel no primeiro slide
 goTo(0);
